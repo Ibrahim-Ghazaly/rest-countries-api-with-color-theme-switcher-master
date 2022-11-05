@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link  rel="stylesheet"    href="css/all.min.css"> 
+    <!-- main template css file -->
+  <link  rel="stylesheet"    href="css/main.css">
+
+    <title>REST Countries API with color theme switcher</title>
+</head>
+<body>
+    <!-- header  -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <h2 class="heading">Where in the world?</h2>
+                <div class="dark-mood">
+                    <i class="fa-regular fa-moon"></i>
+                    <span>Dark Mode</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- filter and search  -->
+    <div class="filter-serch">
+        <div class="container">
+            <div class="row">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                   <input type="search" id="search-input" placeholder="search for country">
+                </div>
+                <div class="select-menu">
+                    <div class="select">
+                      <span>Filter By region</span>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="options-list">
+                      <div class="option" value="Africa" >Africa</div>
+                      <div class="option" value="America">Americas</div>
+                      <div class="option" value="Asia">Asia</div>
+                      <div class="option" value="Europe">Europe</div>
+                      <div class="option" value="Oceania">Oceania</div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- diplay data from api  -->
+    <section class="countries">
+        <div class="container">
+            <div class="country-container">
+              
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
