@@ -184,7 +184,7 @@ body{
   .countries .country-container .country{
      overflow: hidden;
     border-radius: 10px;
-    border:1px solid black;
+    box-shadow: 0 0 10px #ccc;
 
   }
   .countries .country-container .country a{
@@ -221,7 +221,7 @@ body{
     
    }
 
-   /* start country details  */
+   /* start country details page */
    .country-information{
      width: 100%;
      height: calc(100vh - 60px);

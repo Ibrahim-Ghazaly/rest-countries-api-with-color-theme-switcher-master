@@ -51,7 +51,7 @@ function  showCountries(data){
     countryContainer.innerHTML += `
  
     <div class="country">
-    <a class="country-link" onclick="saveCountryInLocalStorage(${i})">
+    <a class="country-link" onclick="saveCountryInLocalStorage(${data[i].area})">
     <div class="country-img">
         <img src="${data[i].flags.png}" alt="country-img">
     </div>
@@ -82,7 +82,7 @@ function searchCountry(data){
         `
         
         <div class="country">
-        <a  class="country-link" onclick="saveCountryInLocalStorage(${i})">
+        <a  class="country-link" onclick="saveCountryInLocalStorage(${data[i].area})">
         <div class="country-img">
             <img src="${data[i].flags.png}" alt="country-img">
         </div>

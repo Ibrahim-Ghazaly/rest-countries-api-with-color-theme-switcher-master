@@ -11,7 +11,8 @@ darkmodebtn.addEventListener("click",function(){
     document.body.classList.toggle("toggle-dark");
   })
 
-  
+  //fetch data 
+
 function fetchcountrydatails(){
     fetch("data.json").then(res => res.json()).then((data)=>{
     console.log(data)
@@ -22,13 +23,15 @@ function fetchcountrydatails(){
   fetchcountrydatails()
 
 
+  // show country details function 
+
   function showCountryDetails(data){
    
     let id = window.localStorage.id;
     console.log(id)
 
-    let country = data.find((cnt,index)=>{
-           return +id === index
+    let country = data.find((obj)=>{
+           return obj.area === +id
     })
 
    console.log(country)
